@@ -4,74 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies | Helina Tarekegn</title>
+    <link
+      rel="stylesheet"
+      href="/UGR-9858-13/node_modules/bulma/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: bisque;
+      }
+      .header,
+      .hero-foot {
+        background-color: rgb(191, 122, 72);
+      }
+      .highlight {
+        color: rgb(191, 122, 72);
+      }
+    </style>
   </head>
-  <body>
-    <header>
+  <body class="flex flex-col min-h-screen">
+    <header class="header has-text-centered py-4 has-text-black is-size-3">
       <h1>Hobbies</h1>
     </header>
-    <main>
-      <section id="first">
-        <figure>
-          <img src="./images/bike.jpg" alt="bike riding" />
+
+    <main class="columns is-multiline is-centered p-6 is-size-5 is-flex-grow-1">
+      <section
+        class="column is-10-touch is-4-desktop is-4-widescreen is-6-tablet"
+      >
+        <figure class="text-left">
           <figcaption>
+            <p class="highlight">Bike Riding</p>
             <p>
-              Bike Riding helps me calm my mind when there is something
-              bothering me. The moment i start riding, i begin to realize when
-              my thoughts disappear in the air and i feel so good.
+              Helps me calm my mind when there is something bothering me. The
+              moment I start riding, I begin to realize when my thoughts
+              disappear in the air, and I feel so good.
             </p>
           </figcaption>
+          <img
+            src="images/bike.jpg"
+            alt="Bike Riding"
+            class="w-full max-w-md mx-auto mt-4"
+          />
         </figure>
       </section>
-      <section id="second">
-        <figure>
+
+      <section
+        class="column is-10-touch is-4-desktop is-4-widescreen is-6-tablet"
+      >
+        <figure class="text-left">
           <figcaption>
+            <p class="highlight">Meditation</p>
             <p>
-              Meditation helps me to connect with the higherself very easily and
-              it is a practice that i witness the presence of my creator inside
-              me and manifest my heartfelf desires.
+              Helps me to connect with the higher self very easily, and it is a
+              practice that I witness the presence of my creator inside me and
+              manifest my heartfelt desires.
             </p>
           </figcaption>
-          <img src="./images/med.jpeg" alt="meditation" />
+          <img
+            src="images/med.jpeg"
+            alt="Meditation"
+            class="w-full max-w-md mx-auto mt-4"
+          />
         </figure>
       </section>
-      <section id="third">
-        <figure>
-          <img src="./images/music.jpg" alt="listening to music" />
+
+      <section
+        class="column is-10-touch is-4-desktop is-4-widescreen is-6-tablet"
+      >
+        <figure class="text-left">
           <figcaption>
+            <p class="highlight">Music</p>
             <p>
-              Music is life and i think its the greatest form of art human
-              beings could ever ask for. I love listening to music, playing
-              instruments and singing.
+              Is life, and I think it's the greatest form of art human beings
+              could ever ask for. I love listening to music, playing
+              instruments, and singing.
             </p>
           </figcaption>
+          <img
+            src="images/music.jpg"
+            alt="Listening to Music"
+            class="w-full max-w-md mx-auto mt-4"
+          />
         </figure>
       </section>
     </main>
-    <footer>
-      <div class="social-icons">
+
+    <footer
+      class="hero-foot is-flex is-flex-direction-column is-align-items-center is-justify-content-center py-4 mt-auto"
+    >
+      <div class="social-icons is-flex is-justify-content-space-around">
         <a
           href="https://www.instagram.com/@_.helinna__"
-          class="social-icon"
+          class="social-icon ml-4"
+          style="height: 40px; width: 40px"
           target="_blank"
-          ><img src="./images/i.png" alt="Instagram"
+          ><img src="images/i.png" alt="Instagram"
         /></a>
         <a
           href="https://www.linkedin.com/in/@Helina Tarekegn"
-          class="social-icon"
+          class="social-icon ml-4"
+          style="height: 40px; width: 40px"
           target="_blank"
-          ><img src="./images/l.png" alt="Linkedin"
+          ><img src="images/l.png" alt="Linkedin"
         /></a>
         <a
           href="https://t.me/@heebiejeebiies"
-          class="social-icon"
+          class="social-icon ml-4"
+          style="height: 40px; width: 40px"
           target="_blank"
-          ><img src="./images/t.png" alt="Telegram"
+          ><img src="images/t.png" alt="Telegram"
         /></a>
         <a
           href="https://www.facebook.com/@Helina Tarekegn"
-          class="social-icon"
+          class="social-icon ml-4"
+          style="height: 40px; width: 40px"
           target="_blank"
-          ><img src="./images/f.png" alt="Facebook"
+          ><img src="images/f.png" alt="Facebook"
         /></a>
       </div>
     </footer>

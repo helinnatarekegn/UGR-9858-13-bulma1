@@ -4,71 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me | Helina Tarekegn</title>
+    <link
+      rel="stylesheet"
+      href="/UGR-9858-13/node_modules/bulma/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: bisque;
+      }
+      .header,
+      .hero-foot,
+      .navbar-end {
+        background-color: rgb(191, 122, 72);
+      }
+      .highlight {
+        color: rgb(191, 122, 72);
+      }
+    </style>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header has-text-centered py-4 has-text-black is-size-3">
       <h1>Contact</h1>
     </header>
+    <section class="hero is-fullheight is-bold">
+      <main class="section px-6 py-6">
+        <address class="content">
+          <p class="mb-6 is-size-5">
+            <span class="highlight is-size-4">Phone</span>: +(251)9 4283 8202
+          </p>
+          <p class="mb-6 is-size-5">
+            <span class="highlight is-size-4">Email</span>:
+            <a
+              href="mailto:helinatarekegn1213@gmail.com"
+              class="has-text-purple"
+              >helinatarekegn1213@gmail.com</a
+            >
+          </p>
+          <p class="mb-6 is-size-5">
+            <span class="highlight is-size-4">Home Address</span>: CMC,
+            AddisAbaba, Ethiopia
+          </p>
+          <p class="is-size-5">
+            <span class="highlight is-size-4">Twitter</span>:
+            <a
+              href="https://twitter.com/@helinna"
+              target="_blank"
+              class="has-text-link"
+              >@helinna</a
+            >
+          </p>
+        </address>
+      </main>
 
-    <main>
-      <address>
-        <p>Phone: +(251)9 4283 8202</p>
-        <p>
-          Email:
-          <a href="mailto:example@email.com">helinatarekegn1213@gmail.com</a>
-        </p>
-        <p>Home Address: CMC, AddisAbaba, Ethiopia</p>
-        <p>
-          Twitter:
-          <a href="https://twitter.com/@helinna" target="_blank">@helinna</a>
-        </p>
-      </address>
-    </main>
+      <footer
+        class="hero-foot is-bold is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+      >
+        <div class="navbar-brand">
+          <div
+            class="navbar-burger burger"
+            data-target="navbar-menu"
+            onclick="document.getElementById('navbar-menu').classList.toggle('is-active');"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
 
-    <footer>
-      <section id="nav">
-        <ul>
-          <li>
-            <button><a href="home.html">Home</a></button>
-          </li>
-          <li>
-            <button><a href="about.html">About</a></button>
-          </li>
-          <li>
-            <button><a href="hobbies.html">Hobbies</a></button>
-          </li>
-          <li>
-            <button><a href="portfolio.html">Portfolio</a></button>
-          </li>
-        </ul>
-      </section>
+        <div id="navbar-menu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="home.html" class="navbar-item is-size-4 has-text-black"
+              >Home</a
+            >
+            <a href="about.html" class="navbar-item is-size-4 has-text-black"
+              >About</a
+            >
+            <a href="hobbies.html" class="navbar-item is-size-4 has-text-black"
+              >Hobbies</a
+            >
+            <a
+              href="portfolio.html"
+              class="navbar-item is-size-4 has-text-black"
+              >Portfolio</a
+            >
+            <a href="contact.html" class="navbar-item is-size-4 has-text-black"
+              >Contact</a
+            >
+          </div>
+        </div>
 
-      <div class="social-icons">
-        <a
-          href="https://www.instagram.com/@_.helinna__"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/i.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/l.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://t.me/@heebiejeebiies"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/t.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://www.facebook.com/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/f.png" alt="Facebook"
-        /></a>
-      </div>
-    </footer>
+        <div class="social-icons is-flex is-justify-content-space-around">
+          <a
+            href="https://www.instagram.com/@_.helinna__"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/i.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/l.png" alt="Linkedin"
+          /></a>
+          <a
+            href="https://t.me/@heebiejeebiies"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/t.png" alt="Telegram"
+          /></a>
+          <a
+            href="https://www.facebook.com/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/f.png" alt="Facebook"
+          /></a>
+        </div>
+
+        <div class="copy has-text-black mt-4">
+          <p>Copyrights reserved &copy; 2023</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

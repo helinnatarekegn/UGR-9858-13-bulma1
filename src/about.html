@@ -4,67 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me | Helina Tarekegn</title>
+    <link
+      rel="stylesheet"
+      href="/UGR-9858-13/node_modules/bulma/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: bisque;
+      }
+      .header,
+      .hero-foot {
+        background-color: rgb(191, 122, 72);
+      }
+    </style>
   </head>
-  <body>
-    <header>
+  <body class="flex flex-col min-h-screen has-background-yellow">
+    <header class="header has-text-centered py-4 has-text-black is-size-3">
       <h1>About</h1>
     </header>
-    <main>
-      <section id="about">
-        <p>
-          Welcome to my creative corner! I'm Helina Tarekegn, a passionate media
-          enthusiast with a keen eye for visual storytelling. My journey in the
-          world of media has been a captivating exploration of capturing
-          moments, expressing emotions, and crafting narratives that
-          resonate.<br />
-          I have also a background in software engineering. I like to work
-          merging my software skills with my artistic skills to creat a positive
-          impact in the community at large.<br />
-          I am a strong believer of the goodness in humanity and i strive to
-          live my purpose and attain my full potential daily.<br />
-          Join me on this visual journey where creativity knows no bounds. Let's
-          collaborate and bring your ideas to life through the magic of
-          media.<br />
-        </p>
-        <h4>Other Skills:</h4>
-        <ul>
-          <li>Python</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </section>
 
-      <section id="image">
-        <img src="./images/about.jpg" alt="A picture of helina smiling" />
-      </section>
-    </main>
-    <footer>
-      <div class="social-icons">
-        <a
-          href="https://www.instagram.com/@_.helinna__"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/i.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/l.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://t.me/@heebiejeebiies"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/t.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://www.facebook.com/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/f.png" alt="Facebook"
-        /></a>
-      </div>
-    </footer>
+    <section class="hero is-fullheight is-bold">
+      <main
+        class="columns is-gap-8 is-multiline is-max-desktop p-6 is-size-5 has-text-black"
+      >
+        <div class="column">
+          <p class="mb-4">
+            Welcome to my creative corner! I'm Helina Tarekegn, a passionate
+            media enthusiast with a keen eye for visual storytelling. My journey
+            in the world of media has been a captivating exploration of
+            capturing moments, expressing emotions, and crafting narratives that
+            resonate.<br />
+            I also have a background in software engineering. I like to work
+            merging my software skills with my artistic skills to create a
+            positive impact in the community at large.<br />
+            I am a strong believer in the goodness of humanity, and I strive to
+            live my purpose and attain my full potential daily.<br />
+            Join me on this visual journey where creativity knows no bounds.
+            Let's collaborate and bring your ideas to life through the magic of
+            media.<br />
+          </p>
+          <h4>Other Skills:</h4>
+          <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div
+          class="column is-full-mobile is-half-tablet is-half-desktop is-flex is-align-items-flex-start mt-4"
+        >
+          <img
+            src="images/about.jpg"
+            alt="A picture of Helina smiling"
+            class="image is-4by3 py-0"
+          />
+        </div>
+      </main>
+
+      <footer
+        class="hero-foot is-flex is-flex-direction-column is-align-items-center is-justify-content-center py-4"
+      >
+        <div class="social-icons is-flex is-justify-content-space-around">
+          <a
+            href="https://www.instagram.com/@_.helinna__"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/i.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/l.png" alt="Linkedin"
+          /></a>
+          <a
+            href="https://t.me/@heebiejeebiies"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/t.png" alt="Telegram"
+          /></a>
+          <a
+            href="https://www.facebook.com/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="images/f.png" alt="Facebook"
+          /></a>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

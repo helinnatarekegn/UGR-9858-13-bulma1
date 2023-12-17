@@ -4,67 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Helina Tarekegn</title>
+    <link
+      rel="stylesheet"
+      href="/UGR-9858-13/node_modules/bulma/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero-foot {
+        background-color: rgb(191, 122, 72);
+      }
+      .button {
+        background-color: bisque;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./images/Eelina.png" alt="My Logo" />
+
+  <body
+    class="flex flex-col has-background-cover has-background-centered home"
+    style="
+      background-image: url('images/med.jpeg');
+      background-size: contain;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center center;
+    "
+  >
+    <header
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+      style="background-color: transparent"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <figure class="image is-128x128">
+            <img
+              class="is-rounded"
+              src="/UGR-9858-13/src/images/Eelina.png"
+              alt="My Logo"
+              style="border-radius: 50%; width: 150px; height: 150px"
+            />
+          </figure>
+        </a>
+        <div
+          class="navbar-burger burger is-large"
+          data-target="navbar-menu"
+          onclick="document.getElementById('navbar-menu').classList.toggle('is-active');"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="home.html" class="navbar-item is-size-4 has-text-black"
+            >Home</a
+          >
+          <a href="about.html" class="navbar-item is-size-4 has-text-black"
+            >About</a
+          >
+          <a href="hobbies.html" class="navbar-item is-size-4 has-text-black"
+            >Hobbies</a
+          >
+          <a href="portfolio.html" class="navbar-item is-size-4 has-text-black"
+            >Portfolio</a
+          >
+          <a href="contact.html" class="navbar-item is-size-4 has-text-black"
+            >Contact</a
+          >
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section id="home">
-        <h1>Home</h1>
-        <h3>Helina Tarekegn</h3>
-        <p>Media & Art Enthusiast | Software Engineer</p>
-        <button><a href="about.html">See More...</a></button>
-      </section>
+    <section class="hero is-fullheight is-bold">
+      <div class="hero-body">
+        <main
+          class="section is-flex is-flex-direction-column is-align-items-center is-justify-content-flex-start is-flex-grow homem"
+        >
+          <section id="home" class="mb-4 has-text-centered">
+            <h3 class="title is-4 has-text-black has-text-left">
+              Helina Tarekegn
+            </h3>
+            <p class="subtitle is-6 has-text-black">
+              Media & Art Enthusiast | Software Engineer
+            </p>
+            <a href="about.html" class="button is-uppercase">See More...</a>
+          </section>
 
-      <section id="quote">
-        <blockquote>
-          "Behind every lens and within every edit, there's a story waiting to
-          be told. Through media, I strive to capture the essence of moments and
-          emotions."
-        </blockquote>
-      </section>
-    </main>
-
-    <footer>
-      <div class="social-icons">
-        <a
-          href="https://www.instagram.com/@_.helinna__"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/i.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/l.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://t.me/@heebiejeebiies"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/t.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://www.facebook.com/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/f.png" alt="Facebook"
-        /></a>
+          <section id="quote" class="max-w-3xl mx-auto mb-4 has-text-centered">
+            <blockquote class="has-text-black">
+              "Behind every lens and within every edit, there's a story waiting
+              to be told. Through media, I strive to capture the essence of
+              moments and emotions."
+            </blockquote>
+          </section>
+        </main>
       </div>
-    </footer>
+      <footer
+        class="hero-foot is-flex is-flex-direction-column is-align-items-center is-justify-content-center py-4"
+      >
+        <div class="social-icons is-flex is-justify-content-space-around">
+          <a
+            href="https://www.instagram.com/@_.helinna__"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="/UGR-9858-13/src/images/i.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="/UGR-9858-13/src/images/l.png" alt="Linkedin"
+          /></a>
+          <a
+            href="https://t.me/@heebiejeebiies"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="/UGR-9858-13/src/images/t.png" alt="Telegram"
+          /></a>
+          <a
+            href="https://www.facebook.com/@Helina Tarekegn"
+            class="social-icon ml-4"
+            style="height: 40px; width: 40px"
+            target="_blank"
+            ><img src="/UGR-9858-13/src/images/f.png" alt="Facebook"
+          /></a>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
